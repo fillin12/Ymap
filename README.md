@@ -8,7 +8,7 @@
 There are two seperate options for obtaining average CNV/ploidies: 
 
 Specific average: this requires the file, chromosome name and base pair range the average is to be calculated from:
-`$ python3 ymap_mean_cnv.py input_file.gff3.txt chrR 867 5309`
+ `$ python3 ymap_mean_cnv.py input_file.gff3.txt chrR 867 5309`
            
 General average: requires that the ymap_mean_cnv.py file is placed in the same directory as all files that data is to be taken from:
 `$ python3 ymap_mean_cnv.py`
