@@ -175,7 +175,7 @@ def main():
                 except ZeroDivisionError:
 
                     print( "ERROR: Incorrect format in file: ", files )
-                    print( "\tSkipping this remaining data in this file." )
+                    print( "\tSkipping the remaining data in this file." )
                     break
 
                 new_line = new_line + str( round( average_chr_ploidy, 2 ) ) + ", "
