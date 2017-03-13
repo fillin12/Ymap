@@ -7,7 +7,7 @@
 ### Problems and Solutions: 
 
 1. Some CNV bins from Ymap list "0.0" this may be the absence of real data or problem with alignment. 
- Fix: The user can choose to include or exclude the CNV data with 0.0
+ Fix: The user can choose to include or exclude the CNV data with 0.0 by changing the "1" to a "0" in the Grand_File_Parser and Parse_File initiation lines
  
 2. Skips the remaining part of the file when an issue with formatting arises
  
