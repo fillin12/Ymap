@@ -4,6 +4,14 @@
 
 ### This program will calculate the average CNV or ploidy across every chromosome in a dataset acquired from Ymap data, or it can calculate the CNV and ploidy in a specific location. 
 
+### Problems and Solutions: 
+
+1. Some CNV bins from Ymap list "0.0" this may be the absence of real data or problem with alignment. 
+ Fix: The user can choose to include or exclude the CNV data with 0.0
+ 
+2. Skips the remaining part of the file when an issue with formatting arises
+ 
+
 ### Use: 
 There are two seperate options for obtaining average CNV/ploidies: 
 
