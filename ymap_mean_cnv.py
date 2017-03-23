@@ -31,6 +31,9 @@ def String_Parser(main_string, str_to_find):
 
 
 
+def Anomaly_Finder( ):
+    return 
+
 def Parse_File( input_file, chr_name, start_pos, end_pos, ignore_cnv = 1 ):
 
     '''Looks at a specific location in a given .gff3-formatted text file for the CNV and/or ploidy data'''
@@ -42,10 +45,10 @@ def Parse_File( input_file, chr_name, start_pos, end_pos, ignore_cnv = 1 ):
 
         lines_list = lines.split("\t")
 
-        if len( line_list ) < 9: #Ignore the file header and other odd stuff
+        if len( lines_list ) < 9: #Ignore the file header and other odd stuff
             continue
 
-        if ( line_list[ 5 ] == "0.0" )  and ( ignore_cnv == 1 ): #Ignores sections that have no CNV data
+        if ( lines_list[ 5 ] == "0.0" )  and ( ignore_cnv == 1 ): #Ignores sections that have no CNV data
             zero_count += 1
             continue
 
@@ -184,6 +187,7 @@ def main():
 
             print( new_line[:-2], file = output_file ) # [:-2] clips off the ", " (comma delimiter) at the very end of the string
 
+        output_file.close()
 
     elif len( arg_list ) == 5: # Takes average of a highly specified location
 
@@ -211,6 +215,8 @@ def main():
         print( "ERROR: There is something wrong with your command!" )
         Help_Message()
         quit()
+
+    input_file.close()
 
     print( "Done!")
 
