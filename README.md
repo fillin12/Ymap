@@ -27,7 +27,7 @@ General average: requires that the ymap_mean_cnv.py file is placed in the same d
 
 The input required is a variation of GFF3:
 
- ##gff-version 3
+ `##gff-version 3
 
  [CNV]
  glyph = xyplot
@@ -60,4 +60,4 @@ The input required is a variation of GFF3:
  Ca21chr1_C_albicans_SC5314	Ymap	CNV	63771	68325	3.2	.	.	Note=3.2
  Ca21chr1_C_albicans_SC5314	Ymap	CNV	68326	72880	2.9	.	.	Note=2.9
  Ca21chr1_C_albicans_SC5314	Ymap	CNV	72881	77435	2.5	.	.	Note=2.5
- Ca21chr1_C_albicans_SC5314	Ymap	CNV	77436	81990	2.5	.	.	Note=2.5
+ Ca21chr1_C_albicans_SC5314	Ymap	CNV	77436	81990	2.5	.	.	Note=2.5`
